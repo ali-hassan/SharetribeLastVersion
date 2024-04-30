@@ -1,4 +1,4 @@
-class AllowNullListingShapeForListings < ActiveRecord::Migration
+class AllowNullListingShapeForListings < ActiveRecord::Migration[6.1]
   def up
     change_column :listings, :listing_shape_id, :int, :null => true
   end

@@ -1,4 +1,4 @@
-class RenameTransactionTypeToShareType < ActiveRecord::Migration
+class RenameTransactionTypeToShareType < ActiveRecord::Migration[6.1][6.1]
   def self.up
     rename_column :listings, :transaction_type, :share_type
   end

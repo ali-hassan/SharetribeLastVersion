@@ -1,4 +1,4 @@
-class UpdateColumnInPeopleSmerfForm < ActiveRecord::Migration
+class UpdateColumnInPeopleSmerfForm < ActiveRecord::Migration[6.1][6.1]
   def self.up
     change_column :people_smerf_forms, :person_id, :string
   end

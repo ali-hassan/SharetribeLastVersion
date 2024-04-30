@@ -1,4 +1,4 @@
-class RemoveReadAndAddIsReadToPersonConversation < ActiveRecord::Migration
+class RemoveReadAndAddIsReadToPersonConversation < ActiveRecord::Migration[6.1][6.1]
   def self.up
     remove_column :person_conversations, :read
     add_column :person_conversations, :is_read, :integer, :default => 0

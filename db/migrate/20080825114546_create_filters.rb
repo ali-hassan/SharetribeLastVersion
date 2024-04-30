@@ -1,4 +1,4 @@
-class CreateFilters < ActiveRecord::Migration
+class CreateFilters < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :filters do |t|
       t.string :person_id

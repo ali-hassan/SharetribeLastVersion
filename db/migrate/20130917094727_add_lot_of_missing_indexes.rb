@@ -1,4 +1,4 @@
-class AddLotOfMissingIndexes < ActiveRecord::Migration
+class AddLotOfMissingIndexes < ActiveRecord::Migration[6.1]
   def up
      add_index :community_customizations, :community_id
      add_index :categories, :parent_id

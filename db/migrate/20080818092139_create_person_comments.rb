@@ -1,4 +1,4 @@
-class CreatePersonComments < ActiveRecord::Migration
+class CreatePersonComments < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :person_comments do |t|
       t.string :author_id

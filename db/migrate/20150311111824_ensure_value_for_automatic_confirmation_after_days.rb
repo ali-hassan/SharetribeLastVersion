@@ -1,4 +1,4 @@
-class EnsureValueForAutomaticConfirmationAfterDays < ActiveRecord::Migration
+class EnsureValueForAutomaticConfirmationAfterDays < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE transactions

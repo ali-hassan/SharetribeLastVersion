@@ -1,4 +1,4 @@
-class ChangePostpayTransactionProcessToFree < ActiveRecord::Migration
+class ChangePostpayTransactionProcessToFree < ActiveRecord::Migration[6.1]
   def up
     execute "UPDATE transaction_processes SET process = 'none' WHERE process = 'postpay'"
   end

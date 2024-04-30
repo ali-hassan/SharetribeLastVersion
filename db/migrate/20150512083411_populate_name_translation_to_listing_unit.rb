@@ -1,4 +1,4 @@
-class PopulateNameTranslationToListingUnit < ActiveRecord::Migration
+class PopulateNameTranslationToListingUnit < ActiveRecord::Migration[6.1]
   def up
     execute("UPDATE listing_units SET name_tr_key = translation_key")
   end

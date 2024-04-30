@@ -1,4 +1,4 @@
-class CreateCommunityMemberships < ActiveRecord::Migration
+class CreateCommunityMemberships < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :community_memberships do |t|
       t.string :member_id

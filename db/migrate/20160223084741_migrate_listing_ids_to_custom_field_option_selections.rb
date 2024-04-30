@@ -1,4 +1,4 @@
-class MigrateListingIdsToCustomFieldOptionSelections < ActiveRecord::Migration
+class MigrateListingIdsToCustomFieldOptionSelections < ActiveRecord::Migration[6.1]
 
   # Run this population script after all the code changes are deployed first
   def up

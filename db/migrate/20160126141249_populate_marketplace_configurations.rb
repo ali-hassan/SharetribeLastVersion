@@ -1,4 +1,4 @@
-class PopulateMarketplaceConfigurations < ActiveRecord::Migration
+class PopulateMarketplaceConfigurations < ActiveRecord::Migration[6.1]
   def up
     execute("
       INSERT INTO marketplace_configurations (community_id, main_search, created_at, updated_at)

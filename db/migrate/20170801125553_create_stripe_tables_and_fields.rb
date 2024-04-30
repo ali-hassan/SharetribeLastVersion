@@ -1,4 +1,4 @@
-class CreateStripeTablesAndFields < ActiveRecord::Migration[5.1]
+class CreateStripeTablesAndFields < ActiveRecord::Migration[6.1][5.1]
   def change
     add_column :payment_settings, :api_client_id, :string unless column_exists?(:payment_settings, :api_client_id)
     add_column :payment_settings, :api_private_key, :string unless column_exists?(:payment_settings, :api_private_key)

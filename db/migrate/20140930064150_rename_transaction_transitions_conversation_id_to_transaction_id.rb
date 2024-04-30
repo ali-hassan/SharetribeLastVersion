@@ -1,4 +1,4 @@
-class RenameTransactionTransitionsConversationIdToTransactionId < ActiveRecord::Migration
+class RenameTransactionTransitionsConversationIdToTransactionId < ActiveRecord::Migration[6.1]
   def up
     rename_column :transaction_transitions, :conversation_id, :transaction_id
   end

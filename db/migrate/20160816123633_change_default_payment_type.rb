@@ -1,4 +1,4 @@
-class ChangeDefaultPaymentType < ActiveRecord::Migration
+class ChangeDefaultPaymentType < ActiveRecord::Migration[6.1]
   def up
     change_column :payments, :type, :string, default: "BraintreePayment"
   end

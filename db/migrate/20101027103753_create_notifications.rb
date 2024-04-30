@@ -1,4 +1,4 @@
-class CreateNotifications < ActiveRecord::Migration
+class CreateNotifications < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :notifications do |t|
       t.string :receiver_id

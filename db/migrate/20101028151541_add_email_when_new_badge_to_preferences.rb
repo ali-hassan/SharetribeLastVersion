@@ -1,4 +1,4 @@
-class AddEmailWhenNewBadgeToPreferences < ActiveRecord::Migration
+class AddEmailWhenNewBadgeToPreferences < ActiveRecord::Migration[6.1][6.1]
   def self.up
     # Note: the key should be a string instead of a symbol. This
     # is fixed in a later migration, do not use this code as such!

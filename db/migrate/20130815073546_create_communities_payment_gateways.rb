@@ -1,4 +1,4 @@
-class CreateCommunitiesPaymentGateways < ActiveRecord::Migration
+class CreateCommunitiesPaymentGateways < ActiveRecord::Migration[6.1]
   def change
     create_table :communities_payment_gateways, :id => false do |t|
       t.integer :community_id

@@ -1,4 +1,4 @@
-class RemoveTableCommunitiesPaymentGateways < ActiveRecord::Migration
+class RemoveTableCommunitiesPaymentGateways < ActiveRecord::Migration[6.1]
   def self.up
     drop_table :communities_payment_gateways
   end

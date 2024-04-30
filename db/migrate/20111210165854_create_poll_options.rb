@@ -1,4 +1,4 @@
-class CreatePollOptions < ActiveRecord::Migration
+class CreatePollOptions < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :poll_options do |t|
       t.string :label

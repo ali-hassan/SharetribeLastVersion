@@ -1,4 +1,4 @@
-class PopulateListingShapeDataToListings < ActiveRecord::Migration
+class PopulateListingShapeDataToListings < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE listings

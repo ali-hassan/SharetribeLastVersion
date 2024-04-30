@@ -1,4 +1,4 @@
-class CreateFavors < ActiveRecord::Migration
+class CreateFavors < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :favors do |t|
       t.string :owner_id

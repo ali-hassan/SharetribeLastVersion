@@ -1,4 +1,4 @@
-class RemovePriceFromListingsWithoutPriceField < ActiveRecord::Migration
+class RemovePriceFromListingsWithoutPriceField < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE listings

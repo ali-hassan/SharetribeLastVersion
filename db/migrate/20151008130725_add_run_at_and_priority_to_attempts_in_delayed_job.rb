@@ -1,4 +1,4 @@
-class AddRunAtAndPriorityToAttemptsInDelayedJob < ActiveRecord::Migration
+class AddRunAtAndPriorityToAttemptsInDelayedJob < ActiveRecord::Migration[6.1][6.1]
   def up
     remove_index :delayed_jobs, column: :attempts
     add_index :delayed_jobs, [:attempts, :run_at, :priority]

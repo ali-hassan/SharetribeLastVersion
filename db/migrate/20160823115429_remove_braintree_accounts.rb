@@ -1,4 +1,4 @@
-class RemoveBraintreeAccounts < ActiveRecord::Migration
+class RemoveBraintreeAccounts < ActiveRecord::Migration[6.1]
   def up
     drop_table "braintree_accounts"
   end

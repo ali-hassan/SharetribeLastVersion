@@ -1,4 +1,4 @@
-class CopyCommunityCurrencyToTheCurrencyColumn < ActiveRecord::Migration
+class CopyCommunityCurrencyToTheCurrencyColumn < ActiveRecord::Migration[6.1]
   def up
     sql = "UPDATE communities c
            SET c.currency = c.available_currencies"

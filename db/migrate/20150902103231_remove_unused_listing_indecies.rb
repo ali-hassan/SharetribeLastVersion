@@ -1,4 +1,4 @@
-class RemoveUnusedListingIndecies < ActiveRecord::Migration
+class RemoveUnusedListingIndecies < ActiveRecord::Migration[6.1][6.1]
   def up
     remove_index "listings", name: "index_listings_on_listing_type"
     remove_index "listings", name: "index_listings_on_share_type_id"

@@ -1,4 +1,4 @@
-class RemoveIdFromKassiEventsPeople < ActiveRecord::Migration
+class RemoveIdFromKassiEventsPeople < ActiveRecord::Migration[6.1][6.1]
   def self.up
     drop_table :kassi_events_people
     create_table :kassi_events_people, :id => false do |t|

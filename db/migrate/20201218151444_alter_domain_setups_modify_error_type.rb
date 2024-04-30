@@ -1,4 +1,4 @@
-class AlterDomainSetupsModifyErrorType < ActiveRecord::Migration[5.2]
+class AlterDomainSetupsModifyErrorType < ActiveRecord::Migration[6.1][5.2]
   def up
     change_column :domain_setups, :error, :text, default: nil
   end

@@ -1,4 +1,4 @@
-class AddInviterIdToInvitations < ActiveRecord::Migration
+class AddInviterIdToInvitations < ActiveRecord::Migration[6.1][6.1]
   def self.up
     add_column :invitations, :inviter_id, :string
   end

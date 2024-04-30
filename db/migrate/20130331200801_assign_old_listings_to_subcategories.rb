@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class AssignOldListingsToSubcategories < ActiveRecord::Migration
+class AssignOldListingsToSubcategories < ActiveRecord::Migration[6.1]
   
   def up
     keywords = [

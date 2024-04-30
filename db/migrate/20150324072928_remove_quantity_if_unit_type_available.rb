@@ -1,4 +1,4 @@
-class RemoveQuantityIfUnitTypeAvailable < ActiveRecord::Migration
+class RemoveQuantityIfUnitTypeAvailable < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE listings

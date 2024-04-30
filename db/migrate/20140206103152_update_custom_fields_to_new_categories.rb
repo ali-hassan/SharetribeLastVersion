@@ -1,4 +1,4 @@
-class UpdateCustomFieldsToNewCategories < ActiveRecord::Migration
+class UpdateCustomFieldsToNewCategories < ActiveRecord::Migration[6.1]
   def up
     CategoryCustomField.find_each do |cat_custom_field|
       old_category = cat_custom_field.category

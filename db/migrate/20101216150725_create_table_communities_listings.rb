@@ -1,4 +1,4 @@
-class CreateTableCommunitiesListings < ActiveRecord::Migration
+class CreateTableCommunitiesListings < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :communities_listings, :id => false do |t|
       t.integer :community_id

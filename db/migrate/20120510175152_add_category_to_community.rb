@@ -1,4 +1,4 @@
-class AddCategoryToCommunity < ActiveRecord::Migration
+class AddCategoryToCommunity < ActiveRecord::Migration[6.1][6.1]
   def self.up
     add_column :communities, :category, :string, :default => "other"
   end

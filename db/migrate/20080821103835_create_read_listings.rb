@@ -1,4 +1,4 @@
-class CreateReadListings < ActiveRecord::Migration
+class CreateReadListings < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :read_listings do |t|
       t.string :person_id

@@ -1,4 +1,4 @@
-class CreateListingComments < ActiveRecord::Migration
+class CreateListingComments < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :listing_comments do |t|
       t.string :author_id

@@ -1,4 +1,4 @@
-class CreatePaypalIpnMessages < ActiveRecord::Migration
+class CreatePaypalIpnMessages < ActiveRecord::Migration[6.1]
   def change
     create_table :paypal_ipn_messages do |t|
       t.text :body

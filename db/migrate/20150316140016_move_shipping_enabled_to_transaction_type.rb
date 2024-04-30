@@ -1,4 +1,4 @@
-class MoveShippingEnabledToTransactionType < ActiveRecord::Migration
+class MoveShippingEnabledToTransactionType < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE transaction_types

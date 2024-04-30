@@ -1,4 +1,4 @@
-class CreateDomainSetups < ActiveRecord::Migration[5.2]
+class CreateDomainSetups < ActiveRecord::Migration[6.1][5.2]
   def change
     create_table :domain_setups do |t|
       t.references :community, index: { unique: true }

@@ -1,4 +1,4 @@
-class TurnBadgesOffByDefault < ActiveRecord::Migration
+class TurnBadgesOffByDefault < ActiveRecord::Migration[6.1]
   def up
     change_column_default :communities, :badges_in_use, 0
   end

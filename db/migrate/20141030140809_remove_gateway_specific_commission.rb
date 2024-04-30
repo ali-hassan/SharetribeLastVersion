@@ -1,4 +1,4 @@
-class RemoveGatewaySpecificCommission < ActiveRecord::Migration
+class RemoveGatewaySpecificCommission < ActiveRecord::Migration[6.1]
   def up
     remove_column :payment_gateways, :gateway_commission_percentage
     remove_column :payment_gateways, :gateway_commission_fixed_cents

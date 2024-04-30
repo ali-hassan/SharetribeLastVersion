@@ -1,4 +1,4 @@
-class MigrateCheckoutPostpayListingsToFree < ActiveRecord::Migration
+class MigrateCheckoutPostpayListingsToFree < ActiveRecord::Migration[6.1]
   def up
     # 1) Find all listings where transaction process is "postpay" and payment gateway is "Checkout"
     # 2) Change the listings' transaction process to "none"

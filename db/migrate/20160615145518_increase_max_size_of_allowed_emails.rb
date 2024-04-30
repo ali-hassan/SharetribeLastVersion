@@ -1,4 +1,4 @@
-class IncreaseMaxSizeOfAllowedEmails < ActiveRecord::Migration
+class IncreaseMaxSizeOfAllowedEmails < ActiveRecord::Migration[6.1]
   def up
     change_column :communities, :allowed_emails, :text, limit: 16.megabytes - 1
   end

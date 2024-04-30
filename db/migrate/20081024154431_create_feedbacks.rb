@@ -1,4 +1,4 @@
-class CreateFeedbacks < ActiveRecord::Migration
+class CreateFeedbacks < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :feedbacks do |t|
       t.string :content
