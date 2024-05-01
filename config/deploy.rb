@@ -3,15 +3,20 @@ lock "~> 3.11.0"
 
 set :repo_url,        'git@github.com:llivo/Llivo.git'
 set :application,     'lllvio'
-set :user,            'ubuntu'
+set :user, "ubuntu"
+set :ssh_options, {
+  forward_agent: false,
+  user: fetch(:user)#,
+  # keys: ".ssh/id_ed25519"
+}
 set :puma_threads,    [4, 16]
 set :puma_workers,    3
 
 # Don't change these unless you know what you're doing
 
-set :pty,             true
-# set :use_sudo,        false
-# set :deploy_via,      :remote_cache
+# set :pty,             true
+set :use_sudo,        true
+set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/www/#{fetch(:application)}"
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/lllvio-puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
