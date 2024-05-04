@@ -231,7 +231,7 @@ module Kassi
     config.action_dispatch.rescue_responses["ListingsController::ListingDeleted"] = :gone
     config.action_dispatch.rescue_responses["ApplicationController::FeatureFlagNotEnabledError"] = :not_found
 
-    config.exceptions_app = self.routes
+    # config.exceptions_app = self.routes
 
     config.active_job.queue_adapter = :delayed_job
 
