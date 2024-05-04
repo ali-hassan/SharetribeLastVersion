@@ -68,7 +68,7 @@ class Rack::Attack
   if Rails.cache.class.to_s == "ActiveSupport::Cache::RedisCacheStore"
     Rack::Attack.blocklist('block') do |req|
       # if variable `block <ip>` exists in cache store, then we'll block the request
-      Rails.cache.redis.sismember('blocked', req.env['action_dispatch.remote_ip'].to_s)
+      # Rails.cache.redis.sismember('blocked', req.env['action_dispatch.remote_ip'].to_s)
     end
   end
 
