@@ -88,7 +88,8 @@ Rails.application.configure do
                           namespace: ENV["redis_cache_namespace"] || "cache",
                           compress: true,
                           timeout: 1,
-                          url: "redis://#{ENV["redis_host"]}:#{ENV["redis_port"]}/#{ENV["redis_db"]}",
+                          #url: "redis://#{ENV["redis_host"]}:#{ENV["redis_port"]}/#{ENV["redis_db"]}",
+                          url: "redis://localhost:6379/1",
                           expires_in: ENV["redis_expires_in"] || 240 # default, 4 hours in minutes
                         }]
 
