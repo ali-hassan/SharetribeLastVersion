@@ -150,3 +150,4 @@ Rails.application.configure do
   # List of classes deemed safe to be deserialized from YAML.
   config.active_record.yaml_column_permitted_classes = [Symbol, ActiveSupport::HashWithIndifferentAccess]
 end
+# RAILS_ENV=production bundle exec puma -e  production -p 80 -d -S  ~/puma -C config/puma.rb

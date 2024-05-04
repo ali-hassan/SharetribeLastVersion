@@ -197,7 +197,8 @@ gem 'sorted_set'
 
 
 group :deployment do
-  gem "capistrano", "=3.11"
+  gem 'ffi'
+  gem "capistrano", "=3.17.2"
   gem 'capistrano3-delayed-job', '~> 1.0'
   gem 'capistrano-ssh-doctor', git: 'https://github.com/capistrano-plugins/capistrano-ssh-doctor.git'
   gem 'capistrano-rvm'

@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "~> 3.17.2"
 
 set :repo_url,        'git@github.com:llivo/Llivo.git'
 set :application,     'lllvio'
@@ -18,7 +18,7 @@ set :puma_workers,    3
 set :use_sudo,        true
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/www/#{fetch(:application)}"
-set :puma_bind,       "unix://#{shared_path}/tmp/sockets/lllvio-puma.sock"
+set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
 set :puma_access_log, "#{release_path}/log/puma.access.log"
