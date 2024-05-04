@@ -185,7 +185,7 @@ gem 'intercom', '~> 4.1.3'
 gem 'twitter_cldr', '~> 6.11.3'
 gem 'memoist', '~> 0.16.2'
 gem 'biz', '~> 1.8.2'
-gem 'ffi'#, '~> 1.15.5'
+gem "ffi", github: "ffi/ffi"#, '~> 1.15.5'
 gem 'rubyzip', '~> 2.3.2'
 gem 'bootsnap', '~> 1.16', require: false
 gem 'select2-rails', '~> 4.0.13'
