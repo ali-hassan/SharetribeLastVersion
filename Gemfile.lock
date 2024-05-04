@@ -812,7 +812,7 @@ DEPENDENCIES
   faraday-encoding (~> 0.0.5)
   faraday_middleware (~> 1.2.0)
   fast-polylines (~> 2.2.2)
-  ffi (~> 1.15.5)
+  ffi
   flying-sphinx (~> 1.2.0)
   guard-rspec
   haml (~> 5.2.2)
