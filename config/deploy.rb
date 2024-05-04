@@ -75,7 +75,7 @@ namespace :deploy do
 
   before :starting,  :check_revision
   before 'check:linked_files', 'puma:config'
-  after  :finishing, :compile_assets
+  # after  :finishing, :compile_assets
   after  :finishing, :cleanup
 end
 
