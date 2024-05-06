@@ -1,0 +1,446 @@
+    4  em install bundler
+    5  gem install bundler
+    6  gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    7  sudo apt install gnupg2
+    8  gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    9  \curl -sSL https://get.rvm.io | bash -s stable
+   10  source /home/ubuntu/.rvm/scripts/rvm
+   11  rvm current
+   12  rvm install ruby-3.2.2
+   13  sudo apt-get nginx
+   14  sudo apt-get install nginx
+   15  sudo apt-get install libmysql-ruby libmysqlclient-dev
+   16  sudo apt-get install libmysqlclient-dev
+   17  sudo apt-get install mysql-server -y
+   18  sudo mysql_secure_installation
+   19  mysql -u root
+   20  mysql -p -u root
+   21  sudo mysql -u root
+   22  sudo mysql -uali
+   23  sudo mysql -u ali
+   24  sudo mysql -p -u ali
+   25  rvm current
+   26  rvm use 3.2.2
+   27  rvm gemset create marketplace
+   28  mkdir www
+   29  cd www/
+   30  mkdir lllvio
+   31  cd lllvio/
+   32  sudo apt-get install libmysqlclient-dev -y
+   33  cd ..
+   34  sudo apt-get install libxslt-dev libxml2-dev -y
+   35  sudo apt-get install libmysqlclient-dev -y
+   36  sudo dpkg -i sphinxsearch_2.2.11-release-1~xenial_amd64.deb
+   37  wget http://sphinxsearch.com/files/sphinxsearch_2.2.11-release-1~xenial_amd64.deb
+   38  sudo dpkg -i sphinxsearch_2.2.11-release-1~xenial_amd64.deb
+   39  sudo apt --fix-broken install
+   40  sudo apt-get install libxslt-dev libxml2-dev -y
+   41  sudo apt-get install libmysqlclient-dev -y
+   42  sudo apt-get install libpq5
+   43  sudo dpkg -i sphinxsearch_2.2.11-release-1~xenial_amd64.deb
+   44  ls
+   45  pwd
+   46  cd www
+   47  ls
+   48  sudo vi /etc/nginx/sites-enabled/default
+   49  sudo /etc/init.d/nginx restart
+   50  sudo vi ~/.ssh/authorized_keys
+   51  exit
+   52  which npm
+   53  which nvm
+   54  sudo apt-get install build-essential libssl-dev curl imagemagick -y
+   55  curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh -o install_nvm.sh
+   56  bash install_nvm.sh
+   57  export NVM_DIR="$HOME/.nvm"
+   58  source ~/.profile
+   59  nvm install 18.16
+   60  nvm use 18.16
+   61  nvm use 18.16.0
+   62  nvm install 18.16.0
+   63  nvm use 18.16.0
+   64  nvm use --delete-prefix v18.16.0
+   65  nvm alias default 18.16.1
+   66  sudo apt install build-essential
+   67  git clone --depth=1 https://github.com/tj/n
+   68  cd n/
+   69  sudo make install
+   70  sudo n 18.16.1
+   71  node -v
+   72  nvm install node 18.16.1
+   73  nvm install 18.16.1
+   74  sudo apt-get remove nodejs
+   75  nvm --version
+   76  nvm install node
+   77  nvm uninstall node
+   78  nvm install 18.16
+   79  nvm install 18.16.1
+   80  npm config
+   81  node -v
+   82  sudo npm install -g n
+   83  sudo apt-get remove nodejs
+   84  nvm install 18.16.1
+   85  nvm use 18.16.1
+   86  nvm use --delete-prefix v18.16.1
+   87  ```bash
+   88  source ~/.bashrc
+   89  ```
+   90  sudo vi ~/.bashrc
+   91  sudo apt-get update; sudo apt-get install -y curl
+   92  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   93  ```bash
+   94  check=' export NVM_DIR="$HOME/.nvm"'
+   95  if ! grep -qF "$check" ~/.bashrc; then
+   96      echo "" >>~/.bashrc
+   97      echo "# Add NVM to path" >>~/.bashrc
+   98      echo 'export NVM_DIR="$HOME/.nvm"' >>~/.bashrc
+   99      echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >>~/.bashrc
+  100      echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >>~/.bashrc
+  101  fi
+  102  ```
+  103  npm config
+  104  nvm use --delete-prefix v18.16.1 --silent
+  105  sudo apt-get update
+  106  sudo apt-get install libstdc++6
+  107  echo "" > $(npm config get globalconfig)
+  108  npm config --global edit
+  109  sudo npm config set prefix /usr/local
+  110  sudo apt-get install python-software-properties
+  111  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  112  sudo apt-get update
+  113  sudo apt-get upgrade
+  114  echo "" > $(npm config get userconfig)
+  115  npm config edit
+  116  echo "" > $(npm config get userconfig)
+  117  npm config edit
+  118  sudo apt-get install curl python-software-properties
+  119  curl -sL https://deb.nodesource.com/setup_7.x | sudo bash -
+  120  sudo apt-get install npm
+  121  cd ..
+  122  sudo apt-get install npm
+  123  nvm use 18.16.1
+  124  sudo apt-get autoremove --purge nodejs
+  125  sudo apt-get autoremove --purge npm
+  126  sudo apt-get update
+  127  sudo apt-get install node
+  128  sudo apt-get install nodejs
+  129  nodejs -v
+  130  sudo apt-get install npm
+  131  nvm -v
+  132  nvm -V
+  133  ~/.nvm
+  134  source ~/.nvm
+  135  nvm install 18.16.1
+  136  nvm uninstall 18.16.1
+  137  ldd --version
+  138  node -v
+  139  nvm use 14
+  140  nvm use 16
+  141  nvm use 18.16.1
+  142  nvm install 18.16.1
+  143  npm config delete prefix
+  144  npm config set prefix $NVM_DIR/versions/node/v6.11.1
+  145  export NVM_DIR=~/.nvm
+  146  . $(brew --prefix nvm)/nvm.sh
+  147  sudo apt install linuxbrew-wrapper
+  148  export NVM_DIR=~/.nvm
+  149  . $(brew --prefix nvm)/nvm.sh
+  150  npm config
+  151  nvm use --delete-prefix v5.7.1 --silent
+  152  nvm use --delete-prefix v18.16.1 --silent
+  153  ```bash
+  154  sudo apt-get update; sudo apt-get install -y curl
+  155  ```
+  156  npm config delete prefix
+  157  ```bash
+  158  nvm --version
+  159  ```
+  160  nvm install node && nvm alias default node
+  161  node -v
+  162  export NVM_DIR="/bigdrive/myuser/.nvm"
+  163  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+  164  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  165  do-release-upgrade
+  166  export NVM_DIR="$HOME/.nvm"
+  167  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+  168  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  169  unset npm_config_prefix
+  170  source $HOME/.nvm/nvm.sh
+  171  nvm use 18.16.1
+  172  npm install
+  173  sudo apt-get install npm
+  174  npm install
+  175  nvm install 18.16.1
+  176  nvm install 16.15.1
+  177  node -v
+  178  npm -v
+  179  nvm alias default 18.16.1
+  180  npm i
+  181  exit
+  182  ls
+  183  rm sphinxsearch_2.2.11-release-1~xenial_amd64.deb
+  184  sudo vi ~/.ssh/authorized_keys
+  185  sudo /etc/init.d/nginx
+  186  sudo /etc/init.d/nginx restart
+  187  tail -f /var/log/nginx/error.log
+  188  cd www/lllvio/shared/tmp/sockets/
+  189  ls
+  190  exit
+  191  ls
+  192  cd www/lllvio/
+  193  ls
+  194  cd shared/tmp/sockets/
+  195  ls
+  196  cd ..
+  197  sudo /etc/init.d/nginx restart
+  198  ssh-keygen -t rsa -b 4096ssh-keygen -t rsa -b 4096 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  199  cat ~/.ssh/id_rsa.pub
+  200  mkdir var
+  201  cd var/
+  202  git clone git@github.com:llivo/Llivo.git
+  203  cd Llivo/
+  204  rvm use 3.2.2
+  205  rvm gemset create llivo
+  206  rvm gemset use llivo
+  207  bundle
+  208  gem install mysql2 -v '0.5.6' --source 'https://rubygems.org/'
+  209  git fetch origin
+  210  git branch
+  211  git checkout feature/deployment
+  212  git fetch origin
+  213  git pull
+  214  bundle
+  215  gem install mysql2
+  216  bundle config --global build.mysql2 --with-opt-dir="$(brew --prefix openssl)"
+  217  sudo apt install build-essential
+  218  gem install mysql2
+  219  git branch
+  220  git pull
+  221  sudo apt-get install libmysqlclient-dev
+  222  gem install mysql2
+  223  bundle
+  224  vi config/database.yml
+  225  rake db:create
+  226  RAILS_ENV=production rake db:create
+  227  vi config/database.yml
+  228  vi config/secrets.yml
+  229  vi config/config.yml
+  230  RAILS_ENV=production rake db:create
+  231  RAILS_ENV=production rake db:structure:load
+  232  RAILS_ENV=production rake db:migrate
+  233  sudo vi /etc/nginx/sites-enabled/default
+  234  sudo /etc/init.d/nginx restart
+  235  vi config/puma.rb
+  236  RAILS_ENV=production bundle exec puma -e  production -p 80 -d -S  ~/puma -C config/puma.rb
+  237  RAILS_ENV=production bundle exec puma -e  production -p 80 -S  ~/puma -C config/puma.rb
+  238  sudo /etc/init.d/nginx stop
+  239  RAILS_ENV=production bundle exec puma -e  production -p 80 -S  ~/puma -C config/puma.rb
+  240  ps aux | grep 80
+  241  kill -9 80
+  242  kill -9 380
+  243  sudo kill -9 380
+  244  kill -9 380
+  245  ps aux | grep 80
+  246  kill -9
+  247  sudo kill -9 727
+  248  sudo kill -9 750
+  249  ps aux | grep 80
+  250  sudo /etc/init.d/nginx stop
+  251  RAILS_ENV=production bundle exec puma -e  production -p 80 -S  ~/puma -C config/puma.rb
+  252  sudo vi /etc/nginx/sites-enabled/default
+  253  RAILS_ENV=production bundle exec puma -e  production -p 80 -S  ~/puma -C config/puma.rb
+  254  RAILS_ENV=production bundle exec puma -e  production -p 8080 -S  ~/puma -C config/puma.rb
+  255  vi config/puma.rb
+  256  RAILS_ENV=production bundle exec puma -e  production -p 8080 -S  ~/puma -C config/puma.rb
+  257  touch log/puma.error.log
+  258  touch log/puma.access.log
+  259  RAILS_ENV=production bundle exec puma -e  production -p 8080 -S  ~/puma -C config/puma.rb
+  260  vi /home/ubun (RuntimeError)
+  261  vi /home/ubuntu/var/Llivo/log/puma.error.log
+  262  RAILS_ENV=production bundle exec puma -e  production -p 8080 -S  ~/puma -C config/puma.rb
+  263  rails s
+  264  cd var/Llivo/
+  265  RAILS_ENV=staging  bundle exec rake ts:index
+  266  bundle
+  267  RAILS_ENV=staging  bundle exec rake ts:index
+  268  RAILS_ENV=production  bundle exec rake ts:index
+  269  RAILS_ENV=production  bundle exec rake ts:start
+  270  RAILS_ENV=production  bundle exec rails s -p 80 -b 0.0.0.0
+  271  RAILS_ENV=production  bundle exec rails s -p 8080 -b 0.0.0.0
+  272  tail -f log/puma.error.log
+  273  rm log/puma.error.log
+  274  RAILS_ENV=production  bundle exec rails s -p 8080 -b 0.0.0.0
+  275  cd var/Llivo/
+  276  RACK_ENV=production bundle exec puma -C config/puma.rb
+  277  RAILS_ENV=production bundle exec puma -C config/puma.rb
+  278  vi config/puma.rb
+  279  RAILS_ENV=production bundle exec puma -C config/puma.rb
+  280  RAILS_ENV=production bundle exec puma -e  production -p 8080 -S  ~/puma -C config/puma.rb
+  281  RAILS_ENV=production bundle exec puma -e  production -p 8080 -b 0.0.0.0 -S  ~/puma -C config/puma.rb
+  282  RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  283  sudo reboot
+  284  cd var/Llivo/
+  285  RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  286  sudo RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  287  rvmsudo RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  288  ps aux | grep nginx
+  289  sudo kill -9 950
+  290  sudo kill -9 951
+  291  sudo kill -9 949
+  292  ps aux | grep nginx
+  293  rvmsudo RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  294  RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  295  rvmsudo RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  296  nvm -v
+  297  npm -v
+  298  node -v
+  299  history
+  300  exit
+  301  ```bash
+  302  source ~/.bashrc
+  303  ```
+  304  ```bash
+  305  source ~/.bashrc
+  306  ```
+  307  nvm --help
+  308  exit
+  309  nvm -v
+  310  cd ~
+  311  ls
+  312  cd www/
+  313  cd ..
+  314  ls
+  315  ```bash
+  316  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+  317  ```
+  318  sudo apt-get install node
+  319  sudo apt-get install nodejs
+  320  sudo vi /etc/nginx/sites-enabled/default
+  321  cd var/Llivo/
+  322  npm install
+  323  cd client/
+  324  npm install
+  325  ```bash
+  326  sudo apt-get update; sudo apt-get install -y curl
+  327  ```
+  328  exit
+  329  node -v
+  330  sudo apt-get install jodejs
+  331  sudo apt-get install nodejs
+  332  node -V
+  333  nvm -v
+  334  npm -v
+  335  npm uninstall node
+  336  npm uninstall nodejs
+  337  curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh -o install_nvm.sh
+  338  bash install_nvm.sh
+  339  export NVM_DIR="$HOME/.nvm"
+  340  nvm use --delete-prefix v18.16.1 --silent
+  341  npm -v
+  342  source ~/.profile
+  343  nvm install 18.16.1
+  344  nvm install 20.1
+  345  nvm install 19.0
+  346  nvm install node
+  347  nvm use 18.16.1
+  348  nvm alias default 18.16.1
+  349  git clone --depth=1 https://github.com/tj/n
+  350  cd n/
+  351  sudo make install
+  352  sudo n 18.16.1
+  353  cd ../var/Llivo/
+  354  cd client/
+  355  npm install
+  356  npm uninstall -g node
+  357  cd ~
+  358  npm uninstall -g node
+  359  exit
+  360  sudo apt-get update
+  361  sudo apt-get install libc6
+  362  ldd --version
+  363  tail -f /var/log/nginx/access.log
+  364  tail -f /var/log/nginx/error.log
+  365  tail -f www/lllvio/current/log/puma.*.log
+  366  ls
+  367  cat www/lllvio/shared/config/database.yml
+  368  mysql -u ali -p sharetribe_prod < backup.sql
+  369  tail -f www/lllvio/current/log/puma.error.log
+  370  vi www/lllvio/current/config/application.rb
+  371  tail -f www/lllvio/current/log/puma.error.log
+  372  tail -f www/lllvio/current/log/puma.access.log
+  373  cd www/lllvio/current
+  374  RAILS_ENV=production rails c
+  375  cd ~
+  376  tail -f www/lllvio/current/log/puma.access.log
+  377  cd -
+  378  RAILS_ENV=production sudo apt-get update
+  379  sudo apt-get update
+  380  sudo apt-get install redis-server
+  381  redis-server
+  382  RAILS_ENV=production redis-server
+  383  redis-cli ping
+  384  ps aux | grep redis
+  385  kill -9 47383
+  386  RAILS_ENV=production redis-server
+  387  ps aux | grep redis
+  388  killall redis-server
+  389  ps aux | grep redis
+  390  kill -9 47383
+  391  sudo kill -9 47383
+  392  ps aux | grep redis
+  393  sudo service redis-server stop
+  394  ps aux | grep redis
+  395  ps aux | grep start
+  396  RAILS_ENV=production redis-server
+  397  ps aux | grep redis
+  398  RAILS_ENV=production redis-server --daemonize yes
+  399  tail -f log/puma.*.log
+  400  cd -
+  401  tail -f log/puma.*.log
+  402  tail -f www/lllvio/current/log/puma.*.log
+  403  cp var/Llivo/config/database.yml www/lllvio/shared/config/
+  404  cat var/Llivo/config/database.yml
+  405  cd www/lllvio/shared/config/
+  406  ls
+  407  vi database.yml
+  408  ls
+  409  cd ..
+  410  ls
+  411  cd ..
+  412  ls
+  413  cd shared/
+  414  cp ~/var/Llivo/config/secrets.yml cd config/
+  415  cd config/
+  416  ls
+  417  vi config.yml
+  418  vi database.yml
+  419  vi config.yml
+  420  cd www/lllvio/
+  421  nvm -v
+  422  npm -v
+  423  node -v
+  424  nvm install 18.16.0
+  425  nvm use 18.16.0
+  426  nvm alias default 18.16.0
+  427  sudo n 18.16.0
+  428  node -v
+  429  tail -f /var/log/nginx/error.log
+  430  cd www/lllvio/current
+  431  exit
+  432  cd www/lllvio/current
+  433  rvmsudo RAILS_ENV=production bundle exec rails s -p 80 -b 0.0.0.0
+  434  RAILS_ENV=production rails c
+  435  tail -f log/*.log
+  436  RAILS_ENV=production rails c
+  437  vi config/environments/production.rb
+  438  RAILS_ENV=production script/delayed_job -n 2 start
+  439  RAILS_ENV=production bundle exec rake ts:index; RAILS_ENV=production bundle exec rake ta:start
+  440  RAILS_ENV=production bundle exec rake ts:index; RAILS_ENV=production bundle exec rake ts:start
+  441  cd www/lllvio/current
+  442  RAILS_ENV=production rails c
+  443  sudo apt install certbot python3-certbot-nginx
+  444  sudo vi /etc/nginx/sites-enabled/default
+  445  sudo certbot --nginx -d llivo.com
+  446  sudo /etc/init.d/nginx restart
+  447  vi www/lllvio/shared/config/config.yml
+  448  ls
+  449  history

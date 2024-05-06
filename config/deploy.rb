@@ -89,19 +89,3 @@ task :seed do
     end
   end
 end
-
-# namespace :admin do
-#   desc 'Fix repo'
-#   task :fix_repo, :roles => :web do
-#     run "cd #{shared_path}/cached-copy && git remote set-url origin #{repository}"
-#   end
-# end
-
-# ps aux | grep puma    # Get puma pid
-
-# kill -s SIGUSR2 pid   # Restart puma
-
-# kill -s SIGTERM pid   # Stop puma
-#
-# ## SLL installation
-# https://www.datadoghq.com/dg/apm/synthetics/ssl-monitoring/?utm_source=Advertisement&utm_medium=GoogleAdsSynthetics&utm_campaign=GoogleAdsSynthetics-APITestsAgentless&utm_content=Synthetics&utm_keyword=%2Bcheck%20%2Bssl%20%2Bcertificate%20%2Bonline&utm_matchtype=b&utm_campaignid=15419168577&utm_adgroupid=133208900391&gclid=Cj0KCQiA2NaNBhDvARIsAEw55hiQ83VQGGmoz9Mc9XpM5bySfm_mcXqERGu8vqi5aQfrq4zSjy-HdRoaAu_VEALw_wcB
