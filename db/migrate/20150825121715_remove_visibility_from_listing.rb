@@ -1,4 +1,4 @@
-class RemoveVisibilityFromListing < ActiveRecord::Migration
+class RemoveVisibilityFromListing < ActiveRecord::Migration[6.1]
   def up
     remove_column :listings, :visibility
   end

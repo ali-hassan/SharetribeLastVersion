@@ -1,4 +1,4 @@
-class CreateMissingProcesses < ActiveRecord::Migration
+class CreateMissingProcesses < ActiveRecord::Migration[6.1]
   def up
     # add 'none', author_is_seller: true
     execute("

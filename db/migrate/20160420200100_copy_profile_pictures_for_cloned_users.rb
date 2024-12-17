@@ -1,4 +1,4 @@
-class CopyProfilePicturesForClonedUsers < ActiveRecord::Migration
+class CopyProfilePicturesForClonedUsers < ActiveRecord::Migration[6.1]
 
   class Person < ApplicationRecord
   end

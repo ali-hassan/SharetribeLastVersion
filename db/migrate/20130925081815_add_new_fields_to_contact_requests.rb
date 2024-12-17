@@ -1,4 +1,4 @@
-class AddNewFieldsToContactRequests < ActiveRecord::Migration
+class AddNewFieldsToContactRequests < ActiveRecord::Migration[6.1]
   def change
     add_column :contact_requests, :country, :string
     add_column :contact_requests, :plan_type, :string

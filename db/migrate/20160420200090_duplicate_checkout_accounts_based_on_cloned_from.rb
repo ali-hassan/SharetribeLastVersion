@@ -1,4 +1,4 @@
-class DuplicateCheckoutAccountsBasedOnClonedFrom < ActiveRecord::Migration
+class DuplicateCheckoutAccountsBasedOnClonedFrom < ActiveRecord::Migration[6.1]
   def up
     execute("
       INSERT INTO checkout_accounts

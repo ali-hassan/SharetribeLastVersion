@@ -1,4 +1,4 @@
-class CreateCommunityCustomizations < ActiveRecord::Migration
+class CreateCommunityCustomizations < ActiveRecord::Migration[6.1]
   def change
     create_table :community_customizations do |t|
       t.integer :community_id

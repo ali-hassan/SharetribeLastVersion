@@ -1,4 +1,4 @@
-class AddAttachmentDimensions < ActiveRecord::Migration
+class AddAttachmentDimensions < ActiveRecord::Migration[6.1]
   say "This migration adds fields width and height to listing images table"
 
   def log(i, count, message)

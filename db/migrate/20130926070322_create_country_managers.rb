@@ -1,4 +1,4 @@
-class CreateCountryManagers < ActiveRecord::Migration
+class CreateCountryManagers < ActiveRecord::Migration[6.1]
   def change
     create_table :country_managers do |t|
       t.string :given_name

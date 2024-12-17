@@ -1,4 +1,4 @@
-class AddJoinWithInviteOnlyToCommunities < ActiveRecord::Migration
+class AddJoinWithInviteOnlyToCommunities < ActiveRecord::Migration[6.1][6.1]
   def self.up
     add_column :communities, :join_with_invite_only, :boolean, :default => false
   end

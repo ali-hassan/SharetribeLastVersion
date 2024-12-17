@@ -1,4 +1,4 @@
-class PopulatePeopleUuid < ActiveRecord::Migration
+class PopulatePeopleUuid < ActiveRecord::Migration[6.1]
 
   class Person < ApplicationRecord
   end

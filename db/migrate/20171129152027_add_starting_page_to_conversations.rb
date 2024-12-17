@@ -1,4 +1,4 @@
-class AddStartingPageToConversations < ActiveRecord::Migration[5.1]
+class AddStartingPageToConversations < ActiveRecord::Migration[6.1][5.1]
   def up
     add_column :conversations, :starting_page, :string
     add_index :conversations, :starting_page

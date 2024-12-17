@@ -1,4 +1,4 @@
-class CreateTransactionTypes < ActiveRecord::Migration
+class CreateTransactionTypes < ActiveRecord::Migration[6.1]
   def change
     create_table :transaction_types do |t|
       t.string :type

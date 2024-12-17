@@ -1,4 +1,4 @@
-class AddCommunityIdToPayments < ActiveRecord::Migration
+class AddCommunityIdToPayments < ActiveRecord::Migration[6.1]
   def change
     add_column :payments, :community_id, :integer
   end

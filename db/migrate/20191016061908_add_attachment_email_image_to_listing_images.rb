@@ -1,4 +1,4 @@
-class AddAttachmentEmailImageToListingImages < ActiveRecord::Migration[5.2]
+class AddAttachmentEmailImageToListingImages < ActiveRecord::Migration[6.1][5.2]
   def self.up
     change_table :listing_images do |t|
       t.attachment :email_image

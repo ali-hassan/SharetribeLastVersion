@@ -1,4 +1,4 @@
-class ChangeNameDisplayTypeInCommunities < ActiveRecord::Migration
+class ChangeNameDisplayTypeInCommunities < ActiveRecord::Migration[6.1]
   def up
     execute("UPDATE communities
       SET name_display_type='full_name'

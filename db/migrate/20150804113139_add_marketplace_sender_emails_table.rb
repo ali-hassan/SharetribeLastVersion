@@ -1,4 +1,4 @@
-class AddMarketplaceSenderEmailsTable < ActiveRecord::Migration
+class AddMarketplaceSenderEmailsTable < ActiveRecord::Migration[6.1]
   def up
     create_table :marketplace_sender_emails do |t|
       t.integer :community_id, null: false

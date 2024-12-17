@@ -1,4 +1,4 @@
-class ChangeDescriptionTypeToTextInCommunityCustomizations < ActiveRecord::Migration
+class ChangeDescriptionTypeToTextInCommunityCustomizations < ActiveRecord::Migration[6.1]
   def up
     change_column :community_customizations, :description, :text
   end

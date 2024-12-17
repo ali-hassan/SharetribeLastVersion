@@ -1,4 +1,4 @@
-class RemoveCosCookieFromPerson < ActiveRecord::Migration
+class RemoveCosCookieFromPerson < ActiveRecord::Migration[6.1][6.1]
   def self.up
     remove_column :people, :cos_cookie
   end

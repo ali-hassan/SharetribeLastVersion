@@ -1,6 +1,6 @@
 require File.expand_path('../../migrate_helpers/logging_helpers', __FILE__)
 
-class RemoveBadgeNotificationsFromPersonPreferences < ActiveRecord::Migration
+class RemoveBadgeNotificationsFromPersonPreferences < ActiveRecord::Migration[6.1]
   include LoggingHelper
 
   def up

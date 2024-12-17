@@ -1,6 +1,6 @@
 require File.expand_path('../../migrate_helpers/logging_helpers', __FILE__)
 
-class AddNewLogoStyleAppleTouch < ActiveRecord::Migration
+class AddNewLogoStyleAppleTouch < ActiveRecord::Migration[6.1]
   include LoggingHelper
 
   def up

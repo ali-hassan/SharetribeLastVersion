@@ -1,5 +1,5 @@
 # coding: utf-8
-class DuplicatePeopleByCommunityMembership < ActiveRecord::Migration
+class DuplicatePeopleByCommunityMembership < ActiveRecord::Migration[6.1][6.1]
   def up
     ActiveRecord::Base.transaction do
       select_all(

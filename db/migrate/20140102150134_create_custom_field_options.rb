@@ -1,4 +1,4 @@
-class CreateCustomFieldOptions < ActiveRecord::Migration
+class CreateCustomFieldOptions < ActiveRecord::Migration[6.1]
   def change
     create_table :custom_field_options do |t|
       t.belongs_to :custom_field

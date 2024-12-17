@@ -1,4 +1,4 @@
-class CreateTableGroupsFavors < ActiveRecord::Migration
+class CreateTableGroupsFavors < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :groups_favors, :id => false do |t|
       t.string :group_id

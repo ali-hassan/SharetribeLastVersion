@@ -1,4 +1,4 @@
-class AlterMessagesAddIndexOnSender < ActiveRecord::Migration[5.2]
+class AlterMessagesAddIndexOnSender < ActiveRecord::Migration[6.1][5.2]
   def change
     # At present, this index is useful for data/user deletion, but not utilized
     # elsewhere.

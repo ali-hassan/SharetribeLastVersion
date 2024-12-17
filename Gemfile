@@ -18,7 +18,7 @@ gem 'jquery-rails', '~> 4.4.0'
 # gem 'heroku' install the Heroku toolbelt (https://toolbelt.heroku.com/) instead (as gem had some problems)
 gem 'passenger', '~> 6.0.19'
 
-gem 'mysql2', '~> 0.5.4'
+gem 'mysql2', '~> 0.5.6'
 gem 'bcrypt', '~> 3.1.17'
 gem 'haml', '~> 5.2.2'
 
@@ -160,7 +160,7 @@ group :test do
 
   gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '56fe73dc420d161ecf9842739af7d857031ca1b2'
   gem 'poltergeist', '~> 1.18.1'
-  gem 'puma', '~> 5.6.7'
+  gem 'puma', '~> 4.3', '>= 4.3.1'
   gem 'multi_test', '0.1.2'
 end
 
@@ -185,7 +185,7 @@ gem 'intercom', '~> 4.1.3'
 gem 'twitter_cldr', '~> 6.11.3'
 gem 'memoist', '~> 0.16.2'
 gem 'biz', '~> 1.8.2'
-gem 'ffi', '~> 1.15.5'
+gem "ffi", github: "ffi/ffi"#, '~> 1.15.5'
 gem 'rubyzip', '~> 2.3.2'
 gem 'bootsnap', '~> 1.16', require: false
 gem 'select2-rails', '~> 4.0.13'
@@ -194,3 +194,19 @@ gem 'fast-polylines', '~> 2.2.2'
 gem 'rb-inotify', '~> 0.10', require: false
 gem 'psych', '< 4'
 gem 'sorted_set'
+
+
+group :deployment do
+  gem "capistrano", "=3.17.2"
+  gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'capistrano-ssh-doctor', git: 'https://github.com/capistrano-plugins/capistrano-ssh-doctor.git'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+  gem 'capistrano-npm'
+  # Gems needs to work with capistrano.
+  gem 'ed25519', '~> 1.2'
+  gem 'bcrypt_pbkdf', '~> 1'
+end
+

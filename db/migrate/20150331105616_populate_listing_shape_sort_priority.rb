@@ -1,4 +1,4 @@
-class PopulateListingShapeSortPriority < ActiveRecord::Migration
+class PopulateListingShapeSortPriority < ActiveRecord::Migration[6.1]
   def up
     execute("
       UPDATE listing_shapes

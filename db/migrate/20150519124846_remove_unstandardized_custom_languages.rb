@@ -1,4 +1,4 @@
-class RemoveUnstandardizedCustomLanguages < ActiveRecord::Migration
+class RemoveUnstandardizedCustomLanguages < ActiveRecord::Migration[6.1][6.1]
 
   # Redefine all Active Record models, so that the migration doesn't depend on the version of code
   module MigrationModel

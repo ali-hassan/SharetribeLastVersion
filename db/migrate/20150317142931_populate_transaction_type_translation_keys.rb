@@ -1,4 +1,4 @@
-class PopulateTransactionTypeTranslationKeys < ActiveRecord::Migration
+class PopulateTransactionTypeTranslationKeys < ActiveRecord::Migration[6.1]
   def up
     execute("UPDATE transaction_types
       SET name_tr_key = CONCAT('transaction_type_translation.name.', id),

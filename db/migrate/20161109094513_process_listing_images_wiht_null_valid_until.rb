@@ -1,4 +1,4 @@
-class ProcessListingImagesWihtNullValidUntil < ActiveRecord::Migration
+class ProcessListingImagesWihtNullValidUntil < ActiveRecord::Migration[6.1]
 
   def up
     # Select listing images that are related to listings

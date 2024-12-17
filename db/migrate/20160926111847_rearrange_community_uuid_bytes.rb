@@ -1,4 +1,4 @@
-class RearrangeCommunityUuidBytes < ActiveRecord::Migration
+class RearrangeCommunityUuidBytes < ActiveRecord::Migration[6.1][6.1]
   def up
     mysql_conn = ActiveRecord::Base.connection.raw_connection
 

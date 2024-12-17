@@ -1,4 +1,4 @@
-class CreateFollowerRelationships < ActiveRecord::Migration
+class CreateFollowerRelationships < ActiveRecord::Migration[6.1]
   def change
     create_table :follower_relationships do |t|
       t.string :person_id, :null => false

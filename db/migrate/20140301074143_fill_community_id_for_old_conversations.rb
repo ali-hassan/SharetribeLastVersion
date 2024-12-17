@@ -1,4 +1,4 @@
-class FillCommunityIdForOldConversations < ActiveRecord::Migration
+class FillCommunityIdForOldConversations < ActiveRecord::Migration[6.1]
   def up
     Conversation.find_each do |conversation|
       if conversation.community_id.nil?

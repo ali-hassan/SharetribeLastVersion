@@ -1,4 +1,4 @@
-class ChangeListingTimesViewedDefault < ActiveRecord::Migration
+class ChangeListingTimesViewedDefault < ActiveRecord::Migration[6.1][6.1]
   def self.up
     change_column :listings, :times_viewed, :integer, :default => 0
   end

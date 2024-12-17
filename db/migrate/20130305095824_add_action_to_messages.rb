@@ -1,4 +1,4 @@
-class AddActionToMessages < ActiveRecord::Migration
+class AddActionToMessages < ActiveRecord::Migration[6.1]
   def change
     add_column :messages, :action, :string
   end

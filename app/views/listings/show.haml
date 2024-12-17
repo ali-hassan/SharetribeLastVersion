@@ -136,7 +136,8 @@
               = MoneyViewUtils.to_humanized(@listing.price)
             - with_quantity_text(@current_community, @listing) do |text|
               %span.listing-price-quantity
-                = text
+                = text.capitalize
+                %b= "(it includes pick and drop)"
 
     .row-with-divider
       .col-12

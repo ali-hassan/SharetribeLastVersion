@@ -1,4 +1,4 @@
-class ChangeSymbolsToStringsInPreferences < ActiveRecord::Migration
+class ChangeSymbolsToStringsInPreferences < ActiveRecord::Migration[6.1][6.1]
   def self.up
     Person.all.each do |person|
       person.preferences.each do |key, value|

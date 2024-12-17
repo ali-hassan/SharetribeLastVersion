@@ -1,4 +1,4 @@
-class AddNewTransactionTypeShareForFree < ActiveRecord::Migration
+class AddNewTransactionTypeShareForFree < ActiveRecord::Migration[6.1]
   def up
     Category.where(name: "housing").each do |category|
 

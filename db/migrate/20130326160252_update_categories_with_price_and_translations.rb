@@ -1,4 +1,4 @@
-class UpdateCategoriesWithPriceAndTranslations < ActiveRecord::Migration
+class UpdateCategoriesWithPriceAndTranslations < ActiveRecord::Migration[6.1][6.1]
   def up
     CategoriesHelper.update_translations
     # Skip this at this point as later migration will call it again when there's also payments added, so it won't crash

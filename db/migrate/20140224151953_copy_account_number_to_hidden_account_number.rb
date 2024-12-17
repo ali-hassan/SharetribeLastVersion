@@ -1,4 +1,4 @@
-class CopyAccountNumberToHiddenAccountNumber < ActiveRecord::Migration
+class CopyAccountNumberToHiddenAccountNumber < ActiveRecord::Migration[6.1]
 
   class BraintreeAccount < ApplicationRecord
   end

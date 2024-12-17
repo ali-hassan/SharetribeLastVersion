@@ -1,4 +1,4 @@
-class AddIndexToCommunityTranslations < ActiveRecord::Migration
+class AddIndexToCommunityTranslations < ActiveRecord::Migration[6.1]
   def up
     # cache fetches the all translations for given community
     add_index :community_translations, :community_id

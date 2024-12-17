@@ -1,4 +1,4 @@
-class CreateInvitations < ActiveRecord::Migration
+class CreateInvitations < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :invitations do |t|
       t.string :code

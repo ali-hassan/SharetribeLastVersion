@@ -1,4 +1,4 @@
-class DropLandingPageAssets < ActiveRecord::Migration[5.2]
+class DropLandingPageAssets < ActiveRecord::Migration[6.1][5.2]
   def up
     drop_table :landing_page_assets
   end

@@ -1,4 +1,4 @@
-class AddIndexesForSendEmails < ActiveRecord::Migration[5.1]
+class AddIndexesForSendEmails < ActiveRecord::Migration[6.1][5.1]
   def change
     add_index :listings, [:community_id, :author_id, :deleted], name: 'community_author_deleted'
     add_index :community_memberships, [:community_id, :person_id, :status], name: 'community_person_status'

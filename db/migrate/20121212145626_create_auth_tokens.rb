@@ -1,4 +1,4 @@
-class CreateAuthTokens < ActiveRecord::Migration
+class CreateAuthTokens < ActiveRecord::Migration[6.1]
   def up
      create_table :auth_tokens do |t|
         t.string :token

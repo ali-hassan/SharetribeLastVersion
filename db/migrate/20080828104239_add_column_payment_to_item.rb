@@ -1,4 +1,4 @@
-class AddColumnPaymentToItem < ActiveRecord::Migration
+class AddColumnPaymentToItem < ActiveRecord::Migration[6.1][6.1]
   def self.up
       add_column :items, :payment, :integer
   end

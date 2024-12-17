@@ -1,4 +1,4 @@
-class AlterDelayedJobsAddIndexForPending < ActiveRecord::Migration[5.2]
+class AlterDelayedJobsAddIndexForPending < ActiveRecord::Migration[6.1][5.2]
   def change
     # Index facilitating polling query for pending jobs. The query looks like:
 

@@ -1,4 +1,4 @@
-class RemoveNameColumnFromCategories < ActiveRecord::Migration
+class RemoveNameColumnFromCategories < ActiveRecord::Migration[6.1]
   def up
     remove_column :categories, :name
   end

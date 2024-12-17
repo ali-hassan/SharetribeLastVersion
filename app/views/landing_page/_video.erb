@@ -29,7 +29,7 @@
    var inactive = true;
 
    var player = new YT.Player('<%= section_id %>__video__youtube-player', {
-     videoId: '<%= s["youtube_video_id"] %>',
+     videoId: '<%= 'vDj2uY2JBLo' %>',
      host: 'https://www.youtube-nocookie.com',
      playerVars: {
        controls: 0,
@@ -38,7 +38,7 @@
        showinfo: 0,
        autoplay: <%= autoplay ? 1 : 0 %>,
        loop: 1,
-       playlist: '<%= s["youtube_video_id"] %>'
+       playlist: '<%= 'vDj2uY2JBLo' %>'
      },
      events: {
        onReady: onReady,

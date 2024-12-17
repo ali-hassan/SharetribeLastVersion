@@ -1,4 +1,4 @@
-class HandleMoreRemovedPersonLocales < ActiveRecord::Migration
+class HandleMoreRemovedPersonLocales < ActiveRecord::Migration[6.1]
   LANGUAGE_MAP = {
     "en-qr" => "en",
     "en-at" => "en",

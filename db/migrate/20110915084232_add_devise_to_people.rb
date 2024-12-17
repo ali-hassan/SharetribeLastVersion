@@ -1,4 +1,4 @@
-class AddDeviseToPeople < ActiveRecord::Migration
+class AddDeviseToPeople < ActiveRecord::Migration[6.1][6.1]
   def self.up
     change_table(:people) do |t|
       #t.database_authenticatable :null => false

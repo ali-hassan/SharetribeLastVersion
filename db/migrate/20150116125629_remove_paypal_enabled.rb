@@ -1,4 +1,4 @@
-class RemovePaypalEnabled < ActiveRecord::Migration
+class RemovePaypalEnabled < ActiveRecord::Migration[6.1]
   def up
     remove_column :communities, :paypal_enabled
   end

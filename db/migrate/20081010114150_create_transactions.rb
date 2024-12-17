@@ -1,4 +1,4 @@
-class CreateTransactions < ActiveRecord::Migration
+class CreateTransactions < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :transactions do |t|
       t.string :sender_id

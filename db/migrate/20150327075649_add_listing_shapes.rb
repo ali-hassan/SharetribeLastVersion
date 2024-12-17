@@ -1,4 +1,4 @@
-class AddListingShapes < ActiveRecord::Migration
+class AddListingShapes < ActiveRecord::Migration[6.1]
   def change
     create_table :listing_shapes do |t|
       t.integer :community_id, null: false

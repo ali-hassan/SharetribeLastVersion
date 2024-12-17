@@ -1,4 +1,4 @@
-class RenameSelectedOptionsToCustomFieldOptionSelections < ActiveRecord::Migration
+class RenameSelectedOptionsToCustomFieldOptionSelections < ActiveRecord::Migration[6.1]
   def up
   	rename_table :selected_options, :custom_field_option_selections
   end

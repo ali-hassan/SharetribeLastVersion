@@ -1,4 +1,4 @@
-class CreateGroups < ActiveRecord::Migration
+class CreateGroups < ActiveRecord::Migration[6.1][6.1]
   def self.up
     create_table :groups, :id => false do |t|
       t.string :id, :limit => 22, :null => false

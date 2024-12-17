@@ -1,4 +1,4 @@
-class MakeNotificationsPolymorphic < ActiveRecord::Migration
+class MakeNotificationsPolymorphic < ActiveRecord::Migration[6.1][6.1]
   def self.up
     add_column :notifications, :notifiable_id, :integer
     add_column :notifications, :notifiable_type, :string

@@ -1,4 +1,4 @@
-class CreateListingBlockedDates < ActiveRecord::Migration[5.2]
+class CreateListingBlockedDates < ActiveRecord::Migration[6.1][5.2]
   def change
     create_table :listing_blocked_dates do |t|
       t.references :listing

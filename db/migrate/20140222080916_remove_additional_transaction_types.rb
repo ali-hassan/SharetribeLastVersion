@@ -1,4 +1,4 @@
-class RemoveAdditionalTransactionTypes < ActiveRecord::Migration
+class RemoveAdditionalTransactionTypes < ActiveRecord::Migration[6.1]
   def up
     Service.find_each do |service_trans_type|
       categories = service_trans_type.categories

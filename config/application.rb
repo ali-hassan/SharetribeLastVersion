@@ -94,10 +94,10 @@ module Kassi
     config.action_dispatch.ip_spoofing_check = false
     config.action_dispatch.trusted_proxies = APP_CONFIG.trusted_proxies&.split(",")&.map(&:strip)
 
-    if APP_CONFIG.use_rack_attack.to_s.casecmp("true").zero?
-      # Rack attack middleware for throttling and blocking unwanted traffic
-      config.middleware.insert_after ActionDispatch::RemoteIp, Rack::Attack
-    end
+    # if APP_CONFIG.use_rack_attack.to_s.casecmp("true").zero?
+    #   # Rack attack middleware for throttling and blocking unwanted traffic
+    #   config.middleware.insert_after ActionDispatch::RemoteIp, Rack::Attack
+    # end
     # Note that this insert happens after Rack::Attack is potentially inserted,
     # so the custom header applies before Rack::Attack.
     config.middleware.insert_after ActionDispatch::RemoteIp, ::MarketplaceHostFromCustomHeader
@@ -231,7 +231,7 @@ module Kassi
     config.action_dispatch.rescue_responses["ListingsController::ListingDeleted"] = :gone
     config.action_dispatch.rescue_responses["ApplicationController::FeatureFlagNotEnabledError"] = :not_found
 
-    config.exceptions_app = self.routes
+    # config.exceptions_app = self.routes
 
     config.active_job.queue_adapter = :delayed_job
 

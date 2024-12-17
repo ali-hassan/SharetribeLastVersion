@@ -10,7 +10,7 @@ module PathHelper
   end
 end
 
-class CopySmallCoverPhotoFromCoverPhoto < ActiveRecord::Migration
+class CopySmallCoverPhotoFromCoverPhoto < ActiveRecord::Migration[6.1]
   include LoggingHelper
 
   class Community < ApplicationRecord

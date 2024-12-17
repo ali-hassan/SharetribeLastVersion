@@ -32,6 +32,9 @@ class MarketplaceLookup
       no_communities: no_marketplaces,
       app_domain: app_domain)
 
+    # plan = {:id=>nil, :community_id=>6, :features=>{:deletable=>true, :admin_email=>true, :whitelabel=>true, :footer=>true, :landing_page=>true, :custom_script=>true}, :status=>:active, :member_limit=>nil, :expires_at=>nil, :created_at=>DateTime.now, :updated_at=>DateTime,now, :expired=>false, :closed=>false}
+    puts "******************************************"
+    puts plan
     @app.call(env.merge!(
                 current_marketplace: marketplace,
                 current_plan: plan,

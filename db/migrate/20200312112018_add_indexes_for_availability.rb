@@ -1,4 +1,4 @@
-class AddIndexesForAvailability < ActiveRecord::Migration[5.2]
+class AddIndexesForAvailability < ActiveRecord::Migration[6.1][5.2]
   def change
     add_index :listing_blocked_dates, [:listing_id, :blocked_at], unique: true
     add_index :bookings, [:transaction_id, :start_on, :end_on, :per_hour],

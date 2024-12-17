@@ -1,4 +1,4 @@
-class CreateInvitationUnsubscribes < ActiveRecord::Migration[5.1]
+class CreateInvitationUnsubscribes < ActiveRecord::Migration[6.1][5.1]
   def change
     create_table :invitation_unsubscribes do |t|
       t.integer :community_id

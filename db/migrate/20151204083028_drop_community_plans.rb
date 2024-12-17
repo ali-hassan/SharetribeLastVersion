@@ -1,4 +1,4 @@
-class DropCommunityPlans < ActiveRecord::Migration
+class DropCommunityPlans < ActiveRecord::Migration[6.1]
   def up
     drop_table :community_plans
   end

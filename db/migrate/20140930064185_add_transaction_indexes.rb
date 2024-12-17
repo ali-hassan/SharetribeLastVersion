@@ -1,4 +1,4 @@
-class AddTransactionIndexes < ActiveRecord::Migration
+class AddTransactionIndexes < ActiveRecord::Migration[6.1]
   def change
     add_index :transactions, :listing_id
     add_index :transactions, :conversation_id

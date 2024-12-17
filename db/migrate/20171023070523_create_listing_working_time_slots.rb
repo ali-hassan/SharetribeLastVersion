@@ -1,4 +1,4 @@
-class CreateListingWorkingTimeSlots < ActiveRecord::Migration[5.1]
+class CreateListingWorkingTimeSlots < ActiveRecord::Migration[6.1][6.1]
   def change
     create_table :listing_working_time_slots do |t|
       t.integer :listing_id

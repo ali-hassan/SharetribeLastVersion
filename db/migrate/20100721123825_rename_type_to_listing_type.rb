@@ -1,4 +1,4 @@
-class RenameTypeToListingType < ActiveRecord::Migration
+class RenameTypeToListingType < ActiveRecord::Migration[6.1][6.1]
   def self.up
     remove_column :listings, :type
     add_column :listings, :listings_type, :string

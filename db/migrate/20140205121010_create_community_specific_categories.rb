@@ -1,6 +1,6 @@
 require File.expand_path('../../migrate_helpers/logging_helpers', __FILE__)
 
-class CreateCommunitySpecificCategories < ActiveRecord::Migration
+class CreateCommunitySpecificCategories < ActiveRecord::Migration[6.1]
   include LoggingHelper
 
   def up

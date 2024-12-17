@@ -1,4 +1,4 @@
-class ReprocessCommunityLogos < ActiveRecord::Migration
+class ReprocessCommunityLogos < ActiveRecord::Migration[6.1]
   say "This migration will reprocess the logos of #{Community.count} communities"
 
   def up
