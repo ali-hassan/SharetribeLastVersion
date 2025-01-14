@@ -86,10 +86,45 @@ class ListingsController < ApplicationController
   def show
     @selected_tribe_navi_tab = "home"
     make_onboarding_popup
+    @person  = @listing.author
+    @per_page = params[:per_page] || 30 # the point is to show all here by default
+    includes = [:author, :listing_images]
+    include_closed = @person == @current_user && params[:show_closed]
 
     make_listing_presenter
     @listing_presenter.form_path = new_transaction_path(listing_id: @listing.id)
     @seo_service.listing = @listing
+    raise_errors = Rails.env.development?
+    search = {
+        include_closed: include_closed,
+        page: 1,
+        address: @listing.origin,
+        latitude: @listing.origin_loc.try(:latitude),
+        longitude: @listing.origin_loc.try(:longitude),
+        distance_max: 250.0,
+        distance_unit: :miles,
+        sort: :distance,
+        per_page: @per_page
+    }
+
+    @near_by_listings =
+        ListingIndexService::API::Api
+            .listings
+            .search(
+                community_id: @current_community.id,
+                search: search,
+                engine: FeatureFlagHelper.search_engine,
+                raise_errors: raise_errors,
+                includes: includes
+            ).and_then { |res|
+          Result::Success.new(
+              ListingIndexViewUtils.to_struct(
+                  result: res,
+                  includes: includes,
+                  page: search[:page],
+                  per_page: search[:per_page]
+              ))
+        }.data
 
     record_event(
       flash.now,

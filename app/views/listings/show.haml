@@ -173,8 +173,27 @@
             .listing-author-activity-description
               = t(".feedback")
 
-    - if show_map
+    / - if show_map
+    /   .row
+    /     .col-12
+    /       #googlemap
+    /         = render :partial => "googlemap", :locals => { :listing => @listing}
+
+    - if @listing.origin_loc && @listing.origin_loc.address != ""
+      .row
+        .googlemap{ class: "#{ mobile_device == "mobile" || mobile_device == "tablet" ? "" : "map-width"}" }
+          - maps_key = MarketplaceHelper.google_maps_key(@current_community.id)
+          .embed-container{style:"width:490px;"}
+            %div
+              %iframe{width: "600", height: "550", frameborder: "0",
+                    src: "https://www.google.com/maps/embed/v1/place?key=#{maps_key}&q=#{CGI.escape(@listing.location.address)}&language=#{I18n.locale}"}
+
       .row
         .col-12
-          #googlemap
-            = render :partial => "googlemap", :locals => { :listing => @listing}
+          - unless @near_by_listings.empty?
+            .row
+              %h5 Things to Do Nearby:
+            .row
+              .col-12
+                = render :partial => "listings/near_by_listings_grid", :locals => { person: @person, limit: @per_page, listings:  @near_by_listings.delete_if { |list| list.id == @listing.id } }
+          = render :partial => "origin", :locals => { :origin_loc => @listing.origin_loc }
